@@ -27,8 +27,9 @@ jobs:
 
 
       - name: Deploy to Render
-        uses: render/render-action@v1
-        with:
-          api_key: ${{ secrets.RENDER_API_KEY }}
-          service_id: ${{ secrets.RENDER_SERVICE_ID }}
-          environment: "production"
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+        run: |
+          chmod +x deploy.sh
+          ./deploy.sh

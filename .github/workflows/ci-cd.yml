@@ -32,4 +32,4 @@ jobs:
           RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
         run: |
           chmod +x deploy.sh
-          ./deploy.sh
+          .

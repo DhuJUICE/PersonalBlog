@@ -31,5 +31,5 @@ jobs:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
           RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
         run: |
-          chmod +x deploy.sh
+          chmod +x /deploy.sh
           ./deploy.sh

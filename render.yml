@@ -1,0 +1,7 @@
+version: 1
+services:
+  - type: static
+    name: juniverse
+    env: static
+    buildCommand: ""
+    publishDir: "."

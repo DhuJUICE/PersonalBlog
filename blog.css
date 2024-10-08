@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Lighter background for contrast */
+    color: #34495e;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    color: #2980b9;
+    text-align: center;
+    margin: 10px 0; /* Reduced margin */
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #2980b9, #6dd5ed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+td {
+    padding: 15px; /* Reduced padding */
+    background-color: #ecf0f1; /* Light background for each cell */
+    border-bottom: 1px solid #bdc3c7; /* Subtle borders for better separation */
+}
+
+td:last-child {
+    border-bottom: none; /* Remove border from last row */
+}
+
+p {
+    line-height: 1.5; /* Slightly reduced line height */
+    margin: 5px 0; /* Reduced margin */
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: #2980b9;
+}
+
+hr {
+    border: 1px solid #2980b9;
+    margin: 15px 0; /* Reduced margin */
+}
+
+u {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 5px 0; /* Reduced padding */
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    td {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    td {
+        padding: 8px; /* Further reduced padding */
+    }
+}
